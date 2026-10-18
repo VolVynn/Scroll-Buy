@@ -1,0 +1,6 @@
+{
+  "name": "Scroll & Buy",
+  "description": "Інтерактивний веб-прототип платформи відео-комерції для локальних майстрів та послуг на основі дизайн-системи.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

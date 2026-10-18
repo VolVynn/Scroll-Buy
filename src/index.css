@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-600: #4F6C73;
+  --color-primary-100: #A7E4F2;
+  --color-neutral-900: #0D0D0D;
+  --color-neutral-500: #F2F2F2;
+  --color-neutral-400: #A6A6A6;
+  --color-semantic-error: #AB3336;
+  --color-semantic-warning: #FEDF82;
+  --color-semantic-success: #7FE176;
+  --color-semantic-info: #4963A5;
+
+  --font-heading: 'Open Sans', sans-serif;
+  --font-body: 'Overpass', sans-serif;
+  --font-sarala: 'Sarala', sans-serif;
+}
+
+:root {
+  --primary-600: #4F6C73;
+  --primary-100: #A7E4F2;
+  --neutral-900: #0D0D0D;
+  --neutral-500: #F2F2F2;
+  --neutral-400: #A6A6A6;
+  --semantic-error: #AB3336;
+  --semantic-warning: #FEDF82;
+  --semantic-success: #7FE176;
+  --semantic-info: #4963A5;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--neutral-900);
+  background-color: #E5E7EB;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: #A6A6A6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4F6C73;
+}
+
+/* Hide scrollbar for clean mobile reel experience */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
